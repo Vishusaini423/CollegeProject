@@ -52,7 +52,7 @@
 .cate h1
 {
     background:rgb(139,22,22,0.6);
-    padding-left:15.5px; 
+    padding-left:15px; 
 }
 
 .fa-solid{
