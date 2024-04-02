@@ -137,7 +137,8 @@ header .navbar a:hover{
 }
 .dropbtn img
 {
-  height: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
 }
 .dropdown button
@@ -634,7 +635,7 @@ header .navbar a:hover{
   padding-top: 30px;
   padding-left: 20px;
 }
-
+  
 .cut{
   width: 4%;
 

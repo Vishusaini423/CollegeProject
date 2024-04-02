@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->unsignedBigInteger('subcat_id');
             $table->foreign('subcat_id')->references('id')->on('sub_categories')->onDelete('cascade');
+            $table->string('cost_type');
             $table->string('name');
             $table->string('price');
             $table->string('discount_price');

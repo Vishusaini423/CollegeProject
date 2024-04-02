@@ -103,11 +103,19 @@ body{
                     </select>   
                 </pre>
                 <pre>
-                    <label for="name"> Enter the name of food item</label>
-                    <input type="text" name="name" id=name required>    
+                <label for="costing_type">Choose costing type</label>
+                    <select id="costing_type" name="costing_type">
+                        <option value="/plate">Per Plate</option>
+                        <option value="/kg">Per kg</option>
+                        <option value="/peiece">Per peiece</option>
+                    </select>
                 </pre>
             </div>  
             <div class="adderinnerright">
+                <pre>
+                    <label for="name"> Enter the name of food item</label>
+                    <input type="text" name="name" id=name required>    
+                </pre>
                 <pre>
                     <label for="price">Enter the price of the food item</label>
                     <input type="number" name="price" id="price" required>     

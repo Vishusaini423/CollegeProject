@@ -1,5 +1,4 @@
 <!-- header section starts  -->
-
 <header>
 
     <a href="#" class="logo"></i><p>꧁༺ 𝓓𝓪𝓲𝓵𝔂 𝓓𝓮𝓵𝓲𝓰𝓱𝓽 ༻꧂</p></a>
@@ -32,6 +31,7 @@
                     @else
                     <button><a href="">Profile</a></button>
                     <button><a href="{{ url('order_history') }}/{{ auth()->user()->email }}">Order History</a></button>
+                    <button><a href="{{url('cart')}}">Cart</a></button>
                     <button><a href="{{url('logout')}}">Log Out</a></button>
                     @endif
                 </div>

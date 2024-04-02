@@ -212,6 +212,7 @@ class MainController extends Controller
     {
         $data['category_id']=$res->category;
         $data['subcat_id']=$res->subc;
+        $data['cost_type']=$res->costing_type;
         $data['name']=$res->name;
         $data['price']=$res->price;
         $data['discount_price']=$res->discount_price;
@@ -246,6 +247,16 @@ class MainController extends Controller
         }
 
         return view('getfood', ['data' => $list]);
+    }
+
+
+    public function view_cart()
+    {
+        
+    }
+    public function view_orders()
+    {
+
     }
       
 }

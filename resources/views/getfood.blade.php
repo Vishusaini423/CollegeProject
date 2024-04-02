@@ -76,19 +76,17 @@
     </div>
     <!-- <img src="{{ asset('img/' . $category['image']) }}" alt=""> -->
     <div class="conin">
-            @foreach($category['foods'] as $food)
-            <div class="card">
-                    <h3>{{$food['name']}}</h3>
-                    <h4>{{$food['discount_price']}} <a href=""><button><i class="fa-solid fa-cart-shopping"></i></button></a></h4>
-                    @if($food['price']!=$food['discount_price'])
-                    <h5><s>{{$food['price']}}</s></h5>
-                    @endif
-                    
-                </div>
-                @endforeach
+    @foreach($category['foods'] as $food)
+    <div class="card">
+        <input type="text" value="{{$food['id']}}" class="food-id" style="display:none;">
+        <h3>{{$food['name']}}</h3>
+        <h4>{{$food['discount_price']}}{{$food['cost_type']}} <a><button onclick="add_item(this)"><i class="fa-solid fa-cart-shopping"></i></button></a></h4>
+        @if($food['price'] != $food['discount_price'])
+            <h5><s>{{$food['price']}}</s></h5>
+        @endif
+    </div>
+@endforeach
             </div>
-        @endforeach
+        @endforeach 
 </div>
-
-
 @endsection

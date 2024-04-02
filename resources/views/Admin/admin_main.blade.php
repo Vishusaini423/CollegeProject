@@ -26,5 +26,6 @@ body{
 <a href="{{url('add_category')}}"><button class="btn">Add Food Category</button></a>
 <a href="{{url('add_sub_category')}}"><button class="btn">Add Food Sub Categories</button></a>
 <a href="{{url('add_food')}}"><button class="btn">Add Food Items</button></a>
+<a href="{{url('view_orders')}}"><button class="btn">View Orders</button></a>
 </div>      
 @endsection

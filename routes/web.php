@@ -53,3 +53,7 @@ Route::post('add_sub_category',[MainController::class,'add_sub_category']);
 Route::post('add_food',[MainController::class,'add_food']); 
 
 Route::post('getfood',[MainController::class,'get_food']);
+
+Route::post('view_orders',[MainController::class,'view_orders']);
+
+Route::post('cart',[MainController::class,'view_cart']);
