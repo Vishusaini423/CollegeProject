@@ -11,8 +11,8 @@
         <a href="{{url('homepage')}}#popular">popular</a>
         <a href="{{url('homepage')}}#gallery">gallery</a>
         <a href="{{url('homepage')}}#review">review</a>
-        <a href="{{url('content')}}">Order Now</a>
         @if(Auth::check())   
+        <a href="{{url('content')}}">Order Now</a>
         <form action="">
             <div class="dropdown">
             @auth

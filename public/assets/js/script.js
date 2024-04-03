@@ -1,4 +1,4 @@
-const items = JSON.parse(localStorage.getItem('items')) || [];
+
 function add_item(button) {
     let foodId = button.closest('.card').querySelector('.food-id');
     if (foodId) 
@@ -11,3 +11,5 @@ function add_item(button) {
         console.error("Food ID not found");
     }
 }
+
+

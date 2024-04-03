@@ -20,6 +20,10 @@ Route::get('add_sub_admin',function(){
     return view('Admin.add_sub_admin');
 });
 
+Route::get('cart',function(){
+    return view('cart');
+});
+
 Route::get('order_history/{email}', [MainController::class, 'order_history'])->name('order_history');
     
 Route::get('logout',[MainController::class, 'logout']); 
@@ -56,4 +60,3 @@ Route::post('getfood',[MainController::class,'get_food']);
 
 Route::post('view_orders',[MainController::class,'view_orders']);
 
-Route::post('cart',[MainController::class,'view_cart']);

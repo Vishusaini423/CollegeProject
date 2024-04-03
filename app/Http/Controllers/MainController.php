@@ -11,6 +11,7 @@ use App\Models\categories;
 use App\Models\sub_category;
 use App\Models\SubCategory;
 use App\Models\foods;
+use public\assets\js\script;
 use Auth;
 use Hash;
 use App\Http\Traits\Image;
@@ -252,7 +253,7 @@ class MainController extends Controller
 
     public function view_cart()
     {
-        
+        echo "heheheheh";
     }
     public function view_orders()
     {
